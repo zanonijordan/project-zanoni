@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/elements.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Zanoni</title>
 </head>
 <body>
     <aside class="menu">
-        <section class="main-content menu-content">
+        <div class="main-content menu-content">
             <h1>
-                <a href="#">Logo</a>
+                <a id="logo" href="#">Zanoni</a>
             </h1>
             <nav>
                 <ul>
@@ -33,9 +37,23 @@
                     </li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
-    <section class="section"></section>
-    <section class="section"></section>
+
+    <div class="menu-spacing"></div>
+
+    <section class="intro section main-bg">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <!-- <h1>Terapias de A @ Z</h1> -->
+                <p>Espaço terapeutico dedicado ao seu bem-estar corpo e mente</p>
+            </div>
+            <div class="intro-img">
+            <img src="./assets/img/pedras1.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section dark-bg"></section>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

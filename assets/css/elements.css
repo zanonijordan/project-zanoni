@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color)
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 7.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 3rem;
+}
+#logo {
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    box-shadow: 0 12px 50px rgba(0, 0, 0, .4);
+}
