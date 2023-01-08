@@ -35,7 +35,7 @@
     grid-template-columns: 1fr 1fr;
     /* gap: var(--gap); */
     height: 100vh;
-    align-items: start;
+    align-items: center;
     align-content: space-around;
     justify-items: center;
 }
@@ -45,13 +45,12 @@
     flex-flow: column wrap;
     /* justify-content: flex-start; */
 }
-.intro-text-content p {
-    margin-top: 100px;
+.p-intro {
+    margin-top: 50px;
 }
 .intro-img {
     visibility: hidden;
 }
 .intro-img img {
-    height: 800px;
-    /* padding-left: 100px; */
+    height: 650px;
 }

@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 h1 {
-    font-size: 8rem;
+    font-size: 5rem;
     text-transform: uppercase;
 }
 h2{
@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 p {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 #logo {
     font-family: 'Open Sans', sans-serif;
