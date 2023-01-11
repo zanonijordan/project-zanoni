@@ -3,12 +3,10 @@
     /* background-image: url(/assets/img/whiteBg.png); */
     background-size: cover;
     background-position: center center;
-    padding: var(--gap);
+    padding:  var(--gap);
     padding-right: 0px;
     padding-left: auto;
     padding-left: 0px;
-
-
 }
 .main-content{
     color: var(--primary-color);
@@ -18,39 +16,158 @@
 .dark-bg{
     background-color: var(--primary-color);
     color: var(--white);
-    padding: var(--gap);
-}
-.dark-content {
-    color: var(--white);
+
 }
 /* ----------------- SECTION */
 .section{
     min-height: 100vh;
+    margin-bottom: 1px;
+
 }
-/* --------------------GRID */
+/* --------------------GRID INTRO */
 .intro-content{
     position: relative;
-    top: -3rem;
+    top: -4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: var(--gap); */
-    height: 100vh;
+    gap: var(--gap);
+    min-height: 100vh;
     align-items: center;
     align-content: space-around;
     justify-items: center;
 }
-
-.intro-text-content{
+.intro-content-2{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    align-items: center;
+    align-content: space-around;
+    justify-items: center;
+}
+.intro-text-content-2{
     display: flex;
-    flex-flow: column wrap;
-    /* justify-content: flex-start; */
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.intro-text-content, .intro-img img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 .p-intro {
     margin-top: 50px;
 }
 .intro-img {
+    position: relative;
+    top: -20px;
     visibility: hidden;
 }
 .intro-img img {
-    height: 650px;
+    max-height: 645px;
+}
+
+#placas-ale{
+    max-height: 650px;
+    position: relative;
+    
+}
+
+
+/* -------------------------- GRID SERVICOS */
+.grid-one-content {
+    height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.grid-one-content h2 {
+    margin-bottom: 1rem;
+}
+.grid-one-content p {
+    margin-bottom: 5rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+.grid h3, .grid h2{
+    /* Manter o pseudo element before dentro da div */
+    position: relative;
+    padding-left: 4.5rem;
+    padding-bottom: 2rem;
+}
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3rem;
+    left: -2rem;
+    transform: rotate(5deg);  
+}
+
+/* -----------------------------Galeria */
+.section-gallery{
+    min-height: 100vh;
+    margin-bottom: 1px;
+
+}
+.gallery-text{
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    
+}
+.grid-one-gallery{
+    height: 100vh;
+    max-width: 90%;
+    margin: 0 auto 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.grid-one-gallery h2 {
+    margin-bottom: 1rem;
+}
+.grid-one-gallery p {
+    margin-bottom: 5rem;
+}
+.gallery-img{
+    min-width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+.gallery-spacing{
+    height: 121px;
+}
+/* -------------------------------------------------------Pricing */
+
+.pricing-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    align-items: center;
+    justify-items: center;
+
 }

@@ -4,6 +4,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +22,10 @@ h1 {
     text-transform: uppercase;
 }
 h2{
-    font-size: 7.5rem;
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.5rem;
 }
 
 a {
@@ -29,6 +33,7 @@ a {
 }
 p {
     font-size: 2rem;
+    line-height: 3rem;
 }
 #logo {
     font-family: 'Open Sans', sans-serif;
