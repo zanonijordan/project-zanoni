@@ -30,10 +30,10 @@
                         <a href="#galeria">Galeria</a>
                     </li>
                     <li>
-                        <a href="#">Sobre mim</a>
+                        <a href="#about-me">Sobre mim</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contato">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -143,13 +143,46 @@
     </section>
     <div class="gallery-spacing"></div>
 
-    <section id="pricing" class=" section main-bg">
-        <div class="main-content pricing-content ">
+    <section id="about-me" class=" section main-bg">
+        <div class="main-content aboutMe-content ">
             <h2>Sobre Mim</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium itaque ipsam natus distinctio, 
                 laboriosam possimus fugiat expedita! Sed pariatur earum fuga dolorem harum quisquam eum aliquid, ducimus, accusamus iure suscipit.</p>
         </div>
     </section>
+<!-- ----------------------------------------------------------------Contact me -->
+    <section id="contato" class="section dark-bg">
+        <div class="contact-content">
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contato</legend>
+                    <div class="form-group">
+                        <label for="first-name">Nome</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name" >Sobrenome</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Seu email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Mensagem</label>
+                        <textarea name="messagem" id="message" cols="30" rows="10" placeholder="Sua mensagem" ></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="main-bg" class="footer">
+        <p><a rel="nofollow" target="_blank" href="">Feito por Jordan Zanoni</a></p>
+    </footer>
 
     <!-- ----------------------------------------------------------------SCRIPT -->
     <script src="./assets/js/index.js">

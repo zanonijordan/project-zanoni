@@ -16,13 +16,11 @@
 .dark-bg{
     background-color: var(--primary-color);
     color: var(--white);
-
 }
 /* ----------------- SECTION */
 .section{
     min-height: 100vh;
     margin-bottom: 1px;
-
 }
 /* --------------------GRID INTRO */
 .intro-content{
@@ -50,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 50%;
+    min-height: 50%;
 }
 
 .intro-text-content, .intro-img img {
@@ -79,7 +77,7 @@
 
 /* -------------------------- GRID SERVICOS */
 .grid-one-content {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 90%;
     margin: 0 auto;
     display: flex;
@@ -130,7 +128,7 @@
     
 }
 .grid-one-gallery{
-    height: 100vh;
+    min-height: 100vh;
     max-width: 90%;
     margin: 0 auto 15px;
     display: flex;
@@ -158,16 +156,100 @@
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 .gallery-spacing{
-    height: 121px;
+    min-height: 121px;
 }
-/* -------------------------------------------------------Pricing */
+/* -------------------------------------------------------About Me */
 
-.pricing-content{
+.aboutMe-content{
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     min-height: 100vh;
     align-items: center;
     justify-items: center;
+}
 
+/* ---------------------------------------------------------------- Contact Me */
+
+.contact-content{
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.contact-form{
+    margin-top: 2rem;
+    grid-column: span 2;
+}
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+.form-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-group{
+    min-width: 500px;
+    flex: 1 1 auto;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.form-group input,
+.form-group textarea{
+    border: none;
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    box-shadow: 0 0 5px 2px var(--third-color);
+}
+
+.full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white);
+    color: var(--white);
+    background: none;
+    padding: 1.5rem 2rem;
+    margin-bottom: 10rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    border: 0.5rem solid var(--white);
+    background: var(--white);
+    color: var(--primary-color);
+}
+.form-group ::placeholder{
+    color: #eee;
+}
+
+#footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+#footer a {
+    color: inherit;
+}
+#footer p{
+    margin: 0;
+    padding: 3rem;
 }
