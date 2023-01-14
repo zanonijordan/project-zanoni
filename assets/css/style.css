@@ -396,7 +396,7 @@
         content: '×';
     }
     .menu-spacing{
-        display: none;
+        display: block;
     }
 
     .list-aboutMe{
