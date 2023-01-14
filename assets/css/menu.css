@@ -8,7 +8,14 @@
     border-bottom: 0.07rem solid var(--third-color);
     z-index: 1;
 }
+.menu-main-content{
+    box-sizing: content-box;
+    color: var(--primary-color);
+    max-width: 90%;
+    margin: 0 auto;
+}
 .menu-content{
+    box-sizing: content-box;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -34,6 +41,7 @@
     font-size: 1.8rem;
     color: var(--primary-color);
     position: relative;
+    box-sizing: content-box;
 }
 
 .menu ul li a::after {
@@ -45,11 +53,14 @@
     height: 0.2rem;
     background-color: var(--third-color);
     transition: all 300ms ease-in-out;
+    
 }
 .menu ul li a:hover::after {
+    
     width: 50%;
     left: 25%;
 }
 .menu-spacing {
+    
     height: 92px;
 }
