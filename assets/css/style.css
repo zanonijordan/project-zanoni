@@ -214,7 +214,7 @@
 }
 
 .form-group{
-    min-width: 500px;
+    min-width: 100%;
     flex: 1 1 auto;
 }
 .form-group label{
@@ -229,6 +229,8 @@
     width: 100%;
     font-size: 3rem;
     outline: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 .form-group input:focus,
 .form-group textarea:focus{
@@ -273,6 +275,22 @@
 }
 .close-menu{
     display: none;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-95deg);
+    border: 0.1rem solid var(--primary-color);
+    opacity: 7%;
 }
 /* ----------------------------------------------------------------Media */
 
