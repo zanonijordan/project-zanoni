@@ -336,6 +336,11 @@
 }
 
 @media (max-width: 800px) {
+    #logo{
+        max-width: 50%;
+        max-width: 50%;
+
+    }
     #intro-2-block{
         display: block;
     }

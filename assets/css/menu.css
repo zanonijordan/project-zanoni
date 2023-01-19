@@ -1,3 +1,22 @@
+.logo{
+    position: absolute;
+    left: 0rem;
+    max-width: 40%;
+    max-width: 20%;
+    border-radius: none;
+    border-radius: 10%;
+    box-shadow: none;
+    clear: both;
+    background-color: transparent;
+
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    
+
+}
 .menu{
     background-color: var(--white);
     position: fixed;
@@ -16,6 +35,7 @@
 }
 .menu-content{
     box-sizing: content-box;
+    flex-direction: row-reverse;
     display:flex;
     justify-content: space-between;
     align-items:center;
