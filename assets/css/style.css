@@ -337,8 +337,10 @@
 
 @media (max-width: 800px) {
     #logo{
-        max-width: 50%;
-        max-width: 50%;
+        position: absolute;
+        top: 2rem;
+        left: 40%;
+        max-width: 20%;
 
     }
     #intro-2-block{
