@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="./assets/css/elements.css">
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js" integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt" crossorigin="anonymous"></script>
+
+    <!-- Bootstrapp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/logo/logo.png" type="image/x-icon">
     <title>Zanoni</title>
 </head>
 <body>
@@ -21,15 +27,15 @@
     <aside class="menu">
         
         <div id="menu-content" class="menu-main-content menu-content">
-            <img id="logo" class="logo" src="./assets/img/logo.png" onclick="getElementById('close-menu').checked = false;" alt="logo">
+            <img id="logo" class="logo" src="./assets/img/logo/logo.png" onclick="getElementById('close-menu').checked = false;" alt="logo">
                 <!-- <a id="logo" href="#intro">Zanoni</a> -->                
             <nav>
-                <ul onclick="getElementById('close-menu').checked = false;">
+                <ul class="menu-ul" onclick="getElementById('close-menu').checked = false;">
                     <li>
                         <a href="#intro">Intro</a>
                     </li>
                     <li>
-                        <a href="#servicos">Serviços</a>
+                        <a href="#testimonials">Serviços</a>
                     </li>
                     <li>
                         <a href="#galeria">Galeria</a>
@@ -103,29 +109,45 @@
         </div>
     </section>
 
-    <!-- ----------------------------------------------------------------SERVICOS-->
-    <section id="servicos" class="section dark-bg">
-        <div class="grid-one-content">
-            <h2>My Grid</h2>
-            <p>Uma breve descriçao</p>
+    <!-- ----------------------------------------------------------------Testimonials-->
+    <section id="testimonials" class="section dark-bg">
 
-            <div class="grid">
-                <article>
-                    <h3>Teste 1</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo assumenda maxime in nam eum! Alias incidunt unde recusandae nostrum illum perspiciatis reiciendis iste nemo aliquam, animi beatae ab quas dolorem.</p>
-                </article>
+        <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
 
-                <article>
-                    <h3>Teste 2</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo assumenda maxime in nam eum! Alias incidunt unde recusandae nostrum illum perspiciatis reiciendis iste nemo aliquam, animi beatae ab quas dolorem.</p>
-                </article>
+            <div class="carousel-inner">
 
-                <article>
-                    <h3>Teste 3</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo assumenda maxime in nam eum! Alias incidunt unde recusandae nostrum illum perspiciatis reiciendis iste nemo aliquam, animi beatae ab quas dolorem.</p>
-                </article>
+              <div class="carousel-item active container-fluid">
+                <h3 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h3>
+                <img class="testimonial-image" src="./assets/img/quadrado/agulha-quadrado.jpeg" alt="agulha">
+                <em>Pebbles, New York</em>
             </div>
+
+              <div class="carousel-item container-fluid">
+                <h3 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h3>
+                <img class="testimonial-image" src="./assets/img/quadrado/mao-pedra-azul-quadrado.jpeg" alt="stone">
+                <em>Beverly, Illinois</em>
+              </div>
+
+              <div class="carousel-item container-fluid">
+                <h3 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h3>
+                <img class="testimonial-image" src="./assets/img/quadrado/maquina-quadrado.jpeg" alt="stone">
+                <em>Beverly, Illinois</em>
+              </div>
+      
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
         </div>
+
     </section>
 
     <!-- ----------------------------------------------------------------GALLERY -->

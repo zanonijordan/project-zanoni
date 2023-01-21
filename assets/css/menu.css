@@ -1,21 +1,16 @@
 .logo{
     position: absolute;
     left: 0rem;
-    max-width: 40%;
-    max-width: 20%;
+    max-width: 10%;
     border-radius: none;
-    border-radius: 10%;
     box-shadow: none;
     clear: both;
     background-color: transparent;
-
 }
 
 .menu-nav{
     display: flex;
     flex-direction: row;
-    
-
 }
 .menu{
     background-color: var(--white);
@@ -62,6 +57,7 @@
     color: var(--primary-color);
     position: relative;
     box-sizing: content-box;
+    text-decoration: none;
 }
 
 .menu ul li a::after {

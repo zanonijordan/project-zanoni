@@ -96,52 +96,48 @@
     height: auto;
     object-fit: cover; 
 }
+/* -------------------------- TESTIMONIAL SECTION */
+#testimonials {
+    text-align: center;
+  }
+  #testimonial-carousel{
+    /* width: 90%; */
+    padding: 15%;
+  }
+  .testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .testimonial-image {
+    width: 40%;
+    border-radius: 10%;
+    margin: 20px;
+  }
+  
+  #press {
+    background-color: #ef8172;
+    padding: 3%;
+  }
+  
+  .press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+  }
 
-
-/* -------------------------- GRID SERVICOS */
-.grid-one-content {
+/* -----------------------------Gallery */
+.section-gallery{
     min-height: 100vh;
-    max-width: 90%;
-    margin: 0 auto;
-    padding-top: 3rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    margin-bottom: 1px;
 }
-.grid-one-content h2 {
-    margin-bottom: 1rem;
-}
-.grid-one-content p {
-    margin-bottom: 5rem;
-}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
 }
-.grid h3, .grid h2{
-    /* Manter o pseudo element before dentro da div */
-    position: relative;
-    padding-left: 4.5rem;
-    padding-bottom: 2rem;
-}
-.grid h3::before{
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    position: absolute;
-    font-size: 7.5rem;
-    font-style: italic;
-    top: -3rem;
-    left: -1.5rem;
-    transform: rotate(5deg);  
-}
 
-/* -----------------------------Galeria */
-.section-gallery{
-    min-height: 100vh;
-    margin-bottom: 1px;
-}
 .gallery-text{
     display: flex;
     /* flex-flow: column wrap; */
@@ -181,6 +177,11 @@
 .gallery-spacing{
     min-height: 121px;
 }
+
+
+
+
+
 /* -------------------------------------------------------About Me */
 
 .aboutMe-content{
@@ -327,6 +328,7 @@
     border: 0.1rem solid var(--primary-color);
     opacity: 7%;
 }
+
 /* ----------------------------------------------------------------Media */
 
 @media (min-width: 801px){
@@ -341,8 +343,8 @@
         top: 2rem;
         left: 40%;
         max-width: 20%;
-
     }
+
     #intro-2-block{
         display: block;
     }
@@ -353,7 +355,6 @@
         grid-template-columns: 1fr;
     }
     .gallery-img{
-        width: 100%;
         max-width: 100%;
         max-height: 100%;
     }
@@ -369,7 +370,6 @@
         text-align: center;
     }
     #menu-content{
-
         justify-content: center;
     }
     .menu-content{
@@ -385,6 +385,11 @@
     .menu{
         display: none;
     }
+    .menu-ul{
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+    }
     .close-menu-label::after{
         content: '≡';
         position: fixed;
@@ -394,7 +399,7 @@
         background: var(--primary-color);
         color: var(--white);
         font-size: 3rem;
-        line-height: 2.4rem;
+        line-height: 1.5rem;
         width: 3rem;
         height: 3rem;
         text-align: center;
