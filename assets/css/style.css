@@ -25,6 +25,14 @@
     margin-right: auto;
 }
 /* --------------------GRID INTRO */
+#logo-intro{
+    max-width: 100%;
+    border-radius: none;
+    box-shadow: none;
+    clear: both;
+    background-color: transparent;
+    margin-bottom: 5rem;
+}
 .intro-content{
     position: relative;
     top: -4rem;
