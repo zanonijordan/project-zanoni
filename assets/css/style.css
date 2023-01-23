@@ -112,21 +112,10 @@
   }
   
   .testimonial-image {
-    width: 49%;
+    width: 60%;
     border-radius: 10%;
     margin: 20px;
   }
-  
-  #press {
-    background-color: #ef8172;
-    padding: 3%;
-  }
-  
-  .press-logo {
-    width: 15%;
-    margin: 20px 20px 50px;
-  }
-
 /* -----------------------------Gallery */
 .section-gallery{
     min-height: 100vh;
@@ -189,7 +178,6 @@
     min-height: 100vh;
     align-items: center;
     justify-items: center;
-    
 }
 #ale-lado{
     width: 40%;
