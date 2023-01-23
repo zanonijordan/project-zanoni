@@ -433,6 +433,9 @@
         text-align: center;
         flex-direction: column;
     }
+    .aboutMe-description-text h2 {
+        font-size: 4rem;
+    }
     .list-aboutMe{
         display: flex;
         flex-direction: column;
