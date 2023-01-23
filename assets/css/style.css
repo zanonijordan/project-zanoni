@@ -120,7 +120,7 @@
   }
   
   .testimonial-image {
-    width: 60%;
+    width: 30%;
     border-radius: 10%;
     margin: 20px;
   }
@@ -433,6 +433,24 @@
     .menu-spacing{
         display: block;
     }
+
+    #testimonial-carousel{
+        /* padding: 15%; */
+        margin: 0;
+        padding-top: 105px;
+      }
+      .testimonial-text{
+        font-size: 2rem;
+        line-height: 1.5;
+      }
+      .container-img{
+        width: 100%;
+      }
+      .testimonial-image {
+        width: 60%;
+        border-radius: 10%;
+        margin: 20px;
+    }    
 
     #ale-lado{
         width: 100%;
