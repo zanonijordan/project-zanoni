@@ -21,6 +21,7 @@
     width: 100%;
     border-bottom: 0.07rem solid var(--third-color);
     z-index: 1;
+    transition: all ease-in-out 0.5s;
 }
 .menu-main-content{
     box-sizing: content-box;

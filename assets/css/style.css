@@ -1,6 +1,5 @@
 /* ----------------- MAIN AND SECOND BACKGROUND */
 .main-bg{
-    /* background-image: url(/assets/img/whiteBg.png); */
     background-size: cover;
     background-position: center center;
     padding:  var(--gap);
@@ -72,6 +71,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    border-radius: 0%;
 }
 .p-intro {
     /* margin-top: 0px; */
@@ -99,10 +99,14 @@
 /* -------------------------- TESTIMONIAL SECTION */
 #testimonials {
     text-align: center;
+    background: #4ECDC4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
   #testimonial-carousel{
     /* width: 90%; */
-    padding: 20%;
+    padding: 10%;
   }
   .testimonial-text{
     font-size: 3rem;
@@ -110,7 +114,7 @@
   }
   
   .testimonial-image {
-    width: 55%;
+    width: 49%;
     border-radius: 10%;
     margin: 20px;
   }
@@ -191,24 +195,42 @@
     min-height: 100vh;
     align-items: center;
     justify-items: center;
+    
+}
+#ale-lado{
+    /* height: 10%; */
+    width: 45%;
 }
 
-.aboutMe-title{
+.aboutMe-text{
+    min-height: 50rem;
+}
+.aboutMe-description{
+    padding: 10%;
+}
+.aboutMe-description-text{
     display: flex;
     flex-direction: column;
+    gap: var(--gap);
+}
+.aboutMe-content{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     width: 90%;
 }
-.aboutMe-title h3, .aboutMe-title p{
+
+.aboutMe-content h2, .aboutMe-content p{
     text-align: center;
 }
 
 .list-aboutMe{
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    /* height: 70%; */
     justify-content: space-evenly;
     align-content: space-evenly;
     align-items: flex-start;
@@ -432,7 +454,7 @@
         white-space: nowrap;
         text-align: center;
     }
-    .aboutMe-title{
+    .aboutMe-content{
         text-align: center;
         /* gap: 2rem; */
         /* margin-top: 7rem; */
