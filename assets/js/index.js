@@ -32,3 +32,54 @@ window.addEventListener("scroll", function() {
     /* --we update the main location */
     mainLocation = currentOffSet;
 });
+/* contact function */
+function contact() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if(name == "" || email == "" || message == "") {
+        alert("Please complete all fields");
+    } else {
+        alert("Thank you for your message, I will contact you soon");
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validação básica dos campos
+        const firstName = document.getElementById('first-name').value.trim();
+        const lastName = document.getElementById('last-name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (!firstName || !lastName || !email || !message) {
+            alert('Por favor, preencha todos os campos do formulário.');
+            return;
+        }
+        
+        if (!validateEmail(email)) {
+            alert('Por favor, insira um endereço de email válido.');
+            return;
+        }
+        
+        // Se todas as validações passarem, envia o formulário
+        this.submit();
+        
+        // Opcional: Mostrar mensagem de sucesso (embora o redirecionamento já seja tratado pelo FormSubmit)
+        alert('Mensagem enviada com sucesso!');
+        
+        // Opcional: Resetar o formulário após o envio
+        this.reset();
+    });
+    
+    // Função para validar email
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+});

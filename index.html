@@ -235,7 +235,7 @@
 <!------------------------------------------------------------------Contact me -->
     <section id="contato" class="section dark-bg">
         <div class="contact-content">
-            <div class="contact-form">
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/zanoni.jordan07@gmail.com" method="POST">
                 <fieldset class="form-grid">
                     <legend>Contato</legend>
                     <div class="form-group">
@@ -252,13 +252,17 @@
                     </div>
                     <div class="form-group full-width">
                         <label for="message">Mensagem</label>
-                        <textarea name="messagem" id="message" cols="30" rows="10" placeholder="Sua mensagem" ></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem" ></textarea>
                     </div>
-                    <div class="form-group full-width">
+                    <!-- Configurações adicionais do FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    <input type="hidden" name="_template" value="table">
+                            <div class="form-group full-width">
                         <button type="submit">Enviar</button>
                     </div>
                 </fieldset>
-            </div>
+            </form>
         </div>
     </section>
 <!-- ----------------------------------------------------------------Footer -->
