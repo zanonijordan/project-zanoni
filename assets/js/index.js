@@ -55,9 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const firstName = document.getElementById('first-name').value.trim();
         const lastName = document.getElementById('last-name').value.trim();
         const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
         const message = document.getElementById('message').value.trim();
         
-        if (!firstName || !lastName || !email || !message) {
+        if (!firstName || !lastName || !email || !phone || !message) {
             alert('Por favor, preencha todos os campos do formulário.');
             return;
         }
